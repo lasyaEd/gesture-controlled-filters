@@ -1,20 +1,24 @@
-# gesture-controlled-filters
-A gesture-controlled image filtering system using MediaPipe Hands and a simple ML model for classification.
+# 🎭 Gesture-Controlled Image Filters using OpenCV & MediaPipe 🎨
 
-## How This Works
-1. Gesture Detection:
+## 📌 Overview
+This project implements **real-time hand gesture recognition** to apply different image filters using a webcam.  
+The system detects **six different hand gestures** and applies corresponding filters to the webcam feed.  
 
-Uses MediaPipe Hands to extract 21 keypoints.
-Normalizes keypoints and feeds them to the trained neural network.
-The model predicts the gesture class (0-5).
+### **Supported Gestures & Filters:**
+| Gesture | Effect |
+|---------|--------|
+| ✋ **Open Palm** | No filter (Default) |
+| ✊ **Fist** | Grayscale |
+| ✌️ **Peace Sign** | Sepia |
+| 👍 **Thumbs Up** | Blur |
+| ☝️ **Pointing Finger** | Edge Detection |
+| 👌 **OK Sign** | Cartoon Effect |
 
-2. Filter Application:
+---
 
-Uses a dictionary (filter_functions) to map gesture labels to corresponding filter functions.
-Applies the selected filter to the frame.
+## 🔧 **Installation**
+Ensure you have Python installed (>=3.7). Then, install the required dependencies:
 
-3. Real-time Video Processing:
-
-Displays original + filtered frames side by side.
-Runs until 'q' is pressed.
+```bash
+pip install opencv-python mediapipe numpy torch torchvision scikit-learn pickle-mixin
 
