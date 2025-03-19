@@ -38,7 +38,7 @@ model = GestureClassifier(input_size, num_classes)
 # Training setup
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-epochs = 50
+epochs = 65
 
 # Convert data to tensors
 X_train_tensor = torch.tensor(X_train, dtype=torch.float32)
