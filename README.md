@@ -101,18 +101,6 @@ Try **different gestures** to see filters change in real time!
                                 cv2.THRESH_BINARY, blockSize=9, C=9)
   ```
 
----
-
-## 🔥 **Upcoming Improvements**
-🔹 Add **multiple hand support**  
-🔹 Improve **gesture accuracy** with more training data  
-🔹 Convert project into a **Streamlit app for a GUI**  
-
----
-
-## 👨‍💻 **Author**
-Developed by **[Your Name]**  
-GitHub: [Your GitHub Profile](https://github.com/YourGitHubUsername)  
 
 ---
 
